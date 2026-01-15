@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-white antialiased;
+  }
+
+  /* Custom Prose Overrides for Readability */
+  .prose {
+    --tw-prose-body: theme('colors.gray.300');
+    --tw-prose-headings: theme('colors.white');
+    --tw-prose-links: theme('colors.primary');
+    --tw-prose-bold: theme('colors.white');
+    --tw-prose-quotes: theme('colors.accent');
+    --tw-prose-hr: theme('colors.white / 0.1');
+    --tw-prose-bullets: theme('colors.primary');
+    max-width: none;
+  }
+
+  .prose p {
+    @apply leading-relaxed mb-6;
+  }
+
+  .prose h1, .prose h2, .prose h3 {
+    @apply font-bold tracking-tight mt-12 mb-6;
+  }
+
+  .prose ul, .prose ol {
+    @apply space-y-3 mb-8;
+  }
+
+  .prose li {
+    @apply pl-2 border-l border-white/5;
+  }
+
+  .prose hr {
+    @apply my-16 border-t-2;
+  }
+
+  .prose table {
+    @apply w-full text-sm border-collapse bg-white/5 rounded-xl overflow-hidden mb-12;
+  }
+
+  .prose thead {
+    @apply bg-white/10;
+  }
+
+  .prose th {
+    @apply px-6 py-4 text-left font-bold text-gray-200 uppercase tracking-wider;
+  }
+
+  .prose td {
+    @apply px-6 py-4 border-t border-white/5 text-gray-300;
+  }
+
+  .prose tr:hover {
+    @apply bg-white/[0.02] transition-colors;
+  }
+}

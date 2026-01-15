@@ -1,0 +1,28 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      network: host
+    restart: always
+    volumes:
+      - luxprima_data:/app/data # Persist SQLite DB
+    environment:
+      - DATABASE_URL=sqlite:////app/data/luxprima.db
+      # Add other env vars here (e.g., OPENAI_API_KEY) or use an .env file
+    ports:
+      - "8000:8000"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  frontend:
+    build:
+      context: ./frontend
+      network: host
+    restart: always
+    ports:
+      - "8081:80"
+    depends_on:
+      - backend
+
+volumes:
+  luxprima_data:
