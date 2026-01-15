@@ -4,7 +4,7 @@
 
 LuxPrima is a self-hosted intelligence platform that automates web-based research and report generation. It uses large language models to orchestrate web crawling, information extraction, and synthesis of detailed markdown briefings.
 
-![MainScreen](Docs/Screenshots/Main.jpeg)
+![MainScreen](Docs/Screenshots/Main.jpg)
 
 ## 🛠️ What It Does
 
@@ -68,10 +68,10 @@ If you make improvements, please consider opening a pull request so others can b
 
 ## 📸 Interface Preview
 
-![MainScreen](Docs/Screenshots/Main.jpeg)
-![ReportScreen](Docs/Screenshots/Report.jpeg)
-![SettingsScreen](Docs/Screenshots/Settings.jpeg)
-![SorcesScreen](Docs/Screenshots/Sources.jpeg)
+![MainScreen](Docs/Screenshots/Main.jpg)
+![ReportScreen](Docs/Screenshots/Report.jpg)
+![SettingsScreen](Docs/Screenshots/Settings.jpg)
+![SorcesScreen](Docs/Screenshots/Sources.jpg)
 
 ---
 *A personal project for autonomous intelligence gathering. Built for learning, shared for collaboration.*
