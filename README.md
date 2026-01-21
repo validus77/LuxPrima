@@ -16,8 +16,6 @@ LuxPrima is a self-hosted intelligence platform that automates web-based researc
 - **Report Generation**: Creates markdown reports and can deliver them via SMTP email.
 - **Web Dashboard**: Monitor system status, configure settings, and review past reports.
 
-ADD_SCREEN_SHOT
-
 ## 🛠️ Tech Stack
 
 ### Backend
@@ -36,7 +34,7 @@ ADD_SCREEN_SHOT
 
 ### Prerequisites
 - Docker & Docker Compose
-
+- 
 ### Launch Locally
 1. Clone the repository
 2. Start the containers:
